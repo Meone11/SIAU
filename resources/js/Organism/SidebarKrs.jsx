@@ -3,10 +3,10 @@ import { useState } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
 import NavSidebar from "@/Molecul/SideBar/NavSidebar";
 import UserProfile from "@/Molecul/SideBar/UserProfile";
-import MenuBar from "@/Molecul/SideBar/MenuBar";
+import MenuKrsBar from "@/Molecul/SideBar/MenuKrsBar";
 import SettingField from "@/Molecul/SideBar/SettingField";
 
-const SideBar = () => {
+const SideBarKrs = () => {
     const [open, setOpen] = useState(false);
     return (
         <div
@@ -29,11 +29,11 @@ const SideBar = () => {
                 <UserProfile open={open} />
             </div>
             <div>
-                <MenuBar open={open} />
+                <MenuKrsBar open={open} />
                 <SettingField open={open} />
             </div>
         </div>
     );
 };
 
-export default SideBar;
+export default SideBarKrs;
