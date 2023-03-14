@@ -1,12 +1,17 @@
-import Nama1 from "@/Atoms/Biodata/Nama1";
-import Nama2 from "@/Atoms/Biodata/Nama2";
+import { LabelDataPribadi } from "@/Atoms/Biodata/LabelDataPribadi";
 import React from "react";
 
 function NamaUpdate() {
     return (
         <div>
-            <Nama1 />
-            <Nama2 />
+            {LabelDataPribadi.find((items) =>
+                items.Name === "Nama" ? (
+                    <div>
+                        <h2>{items.Name}</h2>
+                        <h2>{items.Value}</h2>
+                    </div>
+                ) : null
+            )}
         </div>
     );
 }

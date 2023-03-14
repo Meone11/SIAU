@@ -1,4 +1,3 @@
-import HeaderDOT from "@/Molecul/Biodata/Data_Orang_Tua/HeaderDOT";
 import PanelDataOrangTua from "@/Molecul/Biodata/Data_Orang_Tua/PanelDataOrangTua";
 import React from "react";
 
